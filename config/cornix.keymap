@@ -165,7 +165,7 @@
 &kp TAB         &kp Q             &kp W             &kp E          &kp R                &kp T                      &kp Y        &kp U                &kp I          &kp O           &kp P                 &kp BSLH
 &kp ESC         &hm_l LEFT_GUI A  &hm_l LEFT_ALT S  &hm_l LCTRL D  &hm_shift_l LSHFT F  &kp G                      &kp H        &hm_shift_r RSHFT J  &hm_r RCTRL K  &hm_r RALT L    &hm_r RIGHT_GUI SEMI  &kp SQT
 &kp LEFT_SHIFT  &hm_l LGUI Z      &kp X             &kp C          &kp V                &kp B        &none  &none  &kp N        &kp M                &kp COMMA      &kp DOT         &kp UP_ARROW          &kp BACKSPACE
-&none           &none             &none             &lt 5 ESCAPE   &lt 2 TAB            &lt 4 ENTER                &lt 5 SPACE  &lt 2 BACKSPACE      &lt 3 DEL      &kp LEFT_ARROW  &kp DOWN              &kp RIGHT
+&caps_word      &none             &none             &lt 5 ESCAPE   &lt 2 TAB            &lt 4 ENTER                &lt 5 SPACE  &lt 2 BACKSPACE      &lt 3 DEL      &kp LEFT_ARROW  &kp DOWN              &kp RIGHT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -245,10 +245,10 @@
         KeyPad_layer {
             display-name = "NumPad";
             bindings = <
-&kp N7        &kp N8        &kp N9        &kp KP_MINUS  &kp KP_MULTIPLY           &none                  &kp KP_N7        &kp KP_N8        &kp KP_N9        &kp KP_MINUS  &kp KP_MULTIPLY  &none
-&kp NUMBER_4  &kp NUMBER_5  &kp N6        &kp KP_PLUS   &kp KP_DIVIDE             &none                  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_N6        &kp KP_PLUS   &kp KP_DIVIDE    &none
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none         &none                     &none  &trans  &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_N3        &none         &none            &none
-&none         &kp NUMBER_0  &kp KP_DOT    &kp KP_LPAR   &kp KP_RIGHT_PARENTHESIS  &none                  &none            &kp KP_DOT       &kp KP_NUMBER_0  &none         &none            &none
+&kp N7        &kp N8        &kp N9        &kp KP_MINUS          &kp KP_MULTIPLY        &none                           &kp KP_N7        &kp KP_N8                            &kp KP_N9        &kp KP_MINUS  &kp KP_MULTIPLY  &kp KP_NUMLOCK
+&kp NUMBER_4  &kp NUMBER_5  &kp N6        &kp KP_PLUS           &kp KP_DIVIDE          &none                           &kp KP_NUMBER_4  &hm_shift_r RIGHT_SHIFT KP_NUMBER_5  &kp KP_N6        &kp KP_PLUS   &kp KP_DIVIDE    &none
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none                 &none                  &none           &trans  &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2                      &kp KP_N3        &none         &trans           &none
+&none         &kp NUMBER_0  &kp KP_DOT    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE                  &none            &kp KP_DOT                           &kp KP_NUMBER_0  &trans        &trans           &trans
             >;
         };
     };
